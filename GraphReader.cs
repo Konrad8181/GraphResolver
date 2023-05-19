@@ -16,7 +16,6 @@ public class GraphReader
             graph.Add(new List<int>());
         }
 
-        // Wyszukiwanie wszystkich połączeń
         var connectionMatches = Regex.Matches(data, @"(\d+) -> (\d+);");
         foreach (Match match in connectionMatches)
         {

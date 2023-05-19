@@ -16,10 +16,10 @@ var graphReader = new GraphReader();
 //};
 
 // Read from file
-//var cities = graphReader.ReadDotFile(args[0]);
+var cities = graphReader.ReadDotFile(args[0]);
 
 // Generating
-var cities = generator.GenerateCities();
+//var cities = generator.GenerateCities();
 
 var res =  solution.CanReachAllCities(cities);
 var sb = new StringBuilder();
